@@ -11,11 +11,11 @@ body {
   font-family: inherit; }
 
 .header {
-  background-image: linear-gradient(to bottom, rgba(252, 196, 125, 0.5) 5%, rgba(0, 0, 0, 0.5)), url(../img/header__back.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(50, 60, 43, 0.6)), url(../img/adult-business-couple-580677.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 85vh;
   position: relative; }
   .header__nav {
     padding: 1.5rem;
@@ -27,7 +27,7 @@ body {
     display: flex; }
     .header__logo span {
       font-size: 2rem;
-      color: #323C2B;
+      color: #fff;
       align-self: center;
       margin-left: 1rem; }
   .header__img {
@@ -42,7 +42,7 @@ body {
     margin-right: 5rem; }
     .header__list-items {
       list-style: none;
-      color: #323C2B;
+      color: #efefef;
       cursor: pointer;
       transition: all .2s; }
       .header__list-items:hover {
@@ -56,24 +56,26 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -50%);
     text-align: center; }
   .header__heading {
     font-size: 8rem;
-    color: #111;
+    color: #FCC47D;
     font-weight: 300;
     text-transform: uppercase;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
   .header__subtext {
     font-size: 3.2rem;
     font-weight: 300;
-    color: #111;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
+    color: #FCC47D;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
   .header__button {
     border: none;
     font-family: inherit;
-    padding: 1rem 4rem;
-    background-color: rgba(218, 156, 128, 0.9);
+    padding: 1rem 2rem;
+    color: #efefef;
+    font-weight: 600;
+    background-color: rgba(119, 90, 22, 0.9);
     border-radius: .2rem;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -82,6 +84,19 @@ body {
     margin-top: 5rem;
     cursor: pointer; }
   .header__review {
-    display: flex; }
+    display: flex;
+    transform: translateY(10rem);
+    color: #efefef; }
+  .header__block {
+    display: inline-block;
+    margin: 0 5rem;
+    line-height: 150%;
+    width: 20rem; }
+  .header__name {
+    font-size: 2rem;
+    font-weight: 600; }
+  .header__data {
+    margin-top: 1rem;
+    font-size: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */

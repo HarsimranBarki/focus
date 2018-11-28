@@ -1,22 +1,23 @@
 .header{
-    background-image: linear-gradient(rgba(0, 0, 0,.5),rgba(0,0,0,.5)),url(../img/header__back.jpg);
+    background-image: linear-gradient(to bottom,rgba($color-salmon,.5) 5%,rgba(0,0,0,.5)),url(../img/header__back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    background-position: center;
+    height: 80vh;
     position: relative;
     &__nav{
-       background-color: rgba(0,0,0,.5);
        padding: 1.5rem;
        display: flex;
        justify-content:space-between;
        align-content: center;
+       justify-items: center;
     }
     &__logo{
         display: flex;
        
         span{
             font-size: 2rem;
-            color: #fff;
+            color: $color-dark-grey;
             align-self: center;
             margin-left: 1rem;
         }
@@ -32,34 +33,62 @@
         font-size: 2rem;
         font-weight: 500;
         margin-right: 5rem;
-    }
-    &__items{
-        list-style: none;
-        margin-left:3rem;
-        color:#fff;
-        cursor: pointer;
-        &:hover{
-            display: inline-block;
-            color: #4897d8;
+
+        &-items{
+            list-style: none;
+            color: $color-dark-grey;
+            cursor: pointer;
+            transition: all .2s;
+            &:hover{
+                display: inline-block;
+                color: $color-grey;
+                transform: translateY(-.2rem);
+                box-shadow: rgba(0, 0,0, 0.5);
+            }
+            &:active,
+            &:visited{
+                transform: translateY(.2rem);
+            }
         }
     }
+    
     &__hero{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,-80%);
         text-align: center;
     }
     &__heading{
-        font-size: 9rem;
-        color: #DA9C80;
+        font-size: 8rem;
+        color:#111;
         font-weight: 300;
         text-transform: uppercase;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
     &__subtext{
-        font-size: 3rem;
-        color: $color-secondary;
-      
+        font-size: 3.2rem;
+        font-weight: 300;
+        color:#111;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    &__button{
+        border: none;
+        font-family: inherit;
+        padding: 1rem 4rem;
+        background-color: rgba($color-wood,0.9);
+        border-radius: .2rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        transition: all .2s;
+        margin-top: 5rem;
+        cursor: pointer;
+    }
+
+    &__review{
+        display: flex;
     }
 
 }

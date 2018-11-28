@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/HarsimranBarki/focus/issues"
   },
-  "homepage": "https://github.com/HarsimranBarki/focus#readme"
+  "homepage": "https://github.com/HarsimranBarki/focus#readme",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node": "^11.2.0"
+  }
 }

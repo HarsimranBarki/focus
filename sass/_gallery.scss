@@ -1,15 +1,28 @@
 .gallery{
-    margin: 5rem 0;
+    margin: 3rem 0 0 0;
     overflow: hidden;
+    background-image: linear-gradient(to bottom,#2D2000,#503902);
+
+    &__heading{
+        font-size: 3.2rem;
+        text-align: center;
+        padding: 3rem 0;
+        text-transform: uppercase;
+        background: linear-gradient(to right,$color-brown, $color-wood);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 5rem 10rem rgba(0,0,0,0.4);
+    }
     &__box{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,20vw);
         grid-gap: 1.5rem;
-        padding: 1.5rem;
+        padding: 1rem;
         
         &--1{
             position: relative;
+            box-shadow: 0 5rem 10rem rgba(0,0,0,0.4);
             &-text{
                 position: absolute;
                 bottom:1rem;
@@ -21,10 +34,12 @@
                 padding: 1rem 1rem;
                 font-size: 2rem;
                 color: white;
+               
             }
         }
         &--2{
             position: relative;
+            box-shadow: 0 5rem 10rem rgba(0,0,0,0.4);
             &-text{
                 position: absolute;
                 bottom:1rem;
@@ -40,6 +55,7 @@
         }
         &--3{
             position: relative;
+            box-shadow: 0 5rem 10rem rgba(0,0,0,0.4);
             &-text{
                 position: absolute;
                 bottom:1rem;
@@ -55,6 +71,7 @@
         }
         &--4{
             position: relative;
+            box-shadow: 0 5rem 10rem rgba(0,0,0,0.4);
             &-text{
                 position: absolute;
                 bottom:1rem;
@@ -70,6 +87,7 @@
         }
         &--5{
             position: relative;
+            box-shadow: 0 5rem 10rem rgba(0,0,0,0.4);
             &-text{
                 position: absolute;
                 bottom:1rem;
@@ -85,6 +103,7 @@
         }
         &--6{
             position: relative;
+            box-shadow: 0 5rem 10rem rgba(0,0,0,0.4);
             &-text{
                 position: absolute;
                 bottom:1rem;

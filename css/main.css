@@ -99,4 +99,35 @@ body {
     margin-top: 1rem;
     font-size: 1.5rem; }
 
+.main {
+  width: 100%; }
+  .main__heading {
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 3rem 0;
+    text-transform: uppercase;
+    background: linear-gradient(to right bottom, #775A16, #DA9C80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .main__services {
+    display: flex;
+    justify-content: space-around; }
+    .main__services--heading {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      background: linear-gradient(to right bottom, #775A16, #DA9C80);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .main__services--text {
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 120%;
+      color: #323C2B; }
+  .main__img {
+    margin-bottom: 1rem; }
+  .main__features {
+    width: 30rem;
+    text-align: center; }
+
 /*# sourceMappingURL=main.css.map */

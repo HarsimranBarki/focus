@@ -1,0 +1,111 @@
+.gallery{
+    margin: 5rem 0;
+    overflow: hidden;
+    &__box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,20vw);
+        grid-gap: 1.5rem;
+        padding: 1.5rem;
+        
+        &--1{
+            position: relative;
+            &-text{
+                position: absolute;
+                bottom:1rem;
+                left: 1rem;
+                display: block;
+                background-color: rgba(0,0,0,0.8);
+                // height: 4rem;
+                width: 20rem;
+                padding: 1rem 1rem;
+                font-size: 2rem;
+                color: white;
+            }
+        }
+        &--2{
+            position: relative;
+            &-text{
+                position: absolute;
+                bottom:1rem;
+                left: 1rem;
+                display: block;
+                background-color: rgba(0,0,0,0.8);
+                // height: 4rem;
+                width: 18rem;
+                padding: 1rem 1rem;
+                font-size: 2rem;
+                color: white;
+            }
+        }
+        &--3{
+            position: relative;
+            &-text{
+                position: absolute;
+                bottom:1rem;
+                left: 1rem;
+                display: block;
+                background-color: rgba(0,0,0,0.8);
+                // height: 4rem;
+                width: 25rem;
+                padding: 1rem 1rem;
+                font-size: 2rem;
+                color: white;
+            }
+        }
+        &--4{
+            position: relative;
+            &-text{
+                position: absolute;
+                bottom:1rem;
+                left: 1rem;
+                display: block;
+                background-color: rgba(0,0,0,0.8);
+                // height: 4rem;
+                width: 28rem;
+                padding: 1rem 1rem;
+                font-size: 2rem;
+                color: white;
+            }
+        }
+        &--5{
+            position: relative;
+            &-text{
+                position: absolute;
+                bottom:1rem;
+                left: 1rem;
+                display: block;
+                background-color: rgba(0,0,0,0.8);
+                // height: 4rem;
+                width: 28rem;
+                padding: 1rem 1rem;
+                font-size: 2rem;
+                color: white;
+            }
+        }
+        &--6{
+            position: relative;
+            &-text{
+                position: absolute;
+                bottom:1rem;
+                left: 1rem;
+                display: block;
+                background-color: rgba(0,0,0,0.8);
+                // height: 4rem;
+                width: 28rem;
+                padding: 1rem 1rem;
+                font-size: 2rem;
+                color: white;
+            }
+        }
+    }
+
+  
+
+    &__img{
+        display: block;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+    }
+}

@@ -1,0 +1,51 @@
+.testi{
+    margin-top: 3rem;
+    &__container{
+        box-sizing: border-box;
+        padding: 5rem;
+         display: flex;
+       justify-content: space-around;
+        }
+    &__box{
+        box-sizing: border-box;
+        width: 100%;
+
+        &:first-child{
+            margin-right: 5rem;
+        }
+    }
+    &__message{
+        font-size: 3rem;
+        background: linear-gradient(to right,$color-brown, $color-wood);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 300;
+        margin-bottom: 5rem;
+    }
+
+    &__image img{
+        width: 100%;
+        -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+
+    &__reviews{
+        text-align: left;
+    }
+
+    &__heading{
+        font-size: 3rem;
+        background: $color-dark-grey;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 5rem 10rem rgba(0,0,0,0.4);
+        font-weight: 500;
+        font-style: italic;
+    }
+    &__names{
+        font-size: 1.5rem;
+     
+        line-height: 1.2rem;
+        margin-bottom: 5rem;
+    }
+}

@@ -9,7 +9,8 @@ html {
 
 body {
   font-family: inherit;
-  background-color: #efefef; }
+  background-color: #efefef;
+  font-size: inherit; }
 
 .header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(50, 60, 43, 0.6)), url(../img/adult-business-couple-580677.jpg);
@@ -18,6 +19,10 @@ body {
   background-position: center;
   height: 90vh;
   position: relative; }
+  @media only screen and (max-width: 1140px) {
+    .header {
+      height: 80vh;
+      font-size: 90%; } }
   .header__nav {
     padding: 1.5rem;
     display: flex;
@@ -41,6 +46,9 @@ body {
     font-size: 2rem;
     font-weight: 500;
     margin-right: 5rem; }
+    @media only screen and (max-width: 1200px) {
+      .header__list {
+        margin-right: 2rem; } }
     .header__list-items {
       list-style: none;
       color: #efefef;
@@ -65,11 +73,17 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-width: 1120px) {
+      .header__heading {
+        font-size: 5rem; } }
   .header__subtext {
     font-size: 3.2rem;
     font-weight: 300;
     color: #FCC47D;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-width: 1120px) {
+      .header__subtext {
+        font-size: 3rem; } }
   .header__button {
     border: none;
     font-family: inherit;
@@ -97,6 +111,9 @@ body {
     margin: 0 5rem;
     line-height: 150%;
     width: 20rem; }
+    @media only screen and (max-width: 1200px) {
+      .header__block {
+        margin: 0 2rem; } }
   .header__name {
     font-size: 2rem;
     font-weight: 600; }
@@ -110,6 +127,12 @@ body {
   background-image: linear-gradient(to bottom, #eee, #fff); }
   .main__container {
     padding: 4rem; }
+    @media only screen and (max-width: 1200px) {
+      .main__container {
+        padding: 2rem; } }
+    @media only screen and (max-width: 1120px) {
+      .main__container {
+        padding: 1.5rem; } }
   .main__heading {
     font-size: 3.2rem;
     text-align: center;
@@ -144,6 +167,9 @@ body {
   margin: 3rem 0 0 0;
   overflow: hidden;
   background-image: linear-gradient(to bottom, #2D2000, #503902); }
+  @media only screen and (max-width: 1200px) {
+    .gallery {
+      margin: 1rem 0 0 0; } }
   .gallery__heading {
     font-size: 3.2rem;
     text-align: center;
@@ -153,6 +179,9 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 5rem 10rem rgba(0, 0, 0, 0.4); }
+    @media only screen and (max-width: 1200px) {
+      .gallery__heading {
+        padding: 1.2rem 0; } }
   .gallery__box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -160,6 +189,9 @@ body {
     grid-gap: 1.5rem;
     padding: 1rem;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 1000px) {
+      .gallery__box {
+        font-size: 1.5rem; } }
     .gallery__box--1 {
       position: relative; }
       .gallery__box--1-text {
@@ -172,6 +204,10 @@ body {
         padding: 1rem 1rem;
         font-size: 2rem;
         color: white; }
+        @media only screen and (max-width: 1000px) {
+          .gallery__box--1-text {
+            font-size: 1.5rem;
+            width: 15rem; } }
     .gallery__box--2 {
       position: relative; }
       .gallery__box--2-text {
@@ -184,6 +220,10 @@ body {
         padding: 1rem 1rem;
         font-size: 2rem;
         color: white; }
+        @media only screen and (max-width: 1000px) {
+          .gallery__box--2-text {
+            font-size: 1.5rem;
+            width: 15rem; } }
     .gallery__box--3 {
       position: relative; }
       .gallery__box--3-text {
@@ -196,6 +236,10 @@ body {
         padding: 1rem 1rem;
         font-size: 2rem;
         color: white; }
+        @media only screen and (max-width: 1000px) {
+          .gallery__box--3-text {
+            font-size: 1.5rem;
+            width: 20rem; } }
     .gallery__box--4 {
       position: relative; }
       .gallery__box--4-text {
@@ -208,6 +252,10 @@ body {
         padding: 1rem 1rem;
         font-size: 2rem;
         color: white; }
+        @media only screen and (max-width: 1000px) {
+          .gallery__box--4-text {
+            font-size: 1.5rem;
+            width: 22rem; } }
     .gallery__box--5 {
       position: relative; }
       .gallery__box--5-text {
@@ -220,6 +268,10 @@ body {
         padding: 1rem 1rem;
         font-size: 2rem;
         color: white; }
+        @media only screen and (max-width: 1000px) {
+          .gallery__box--5-text {
+            font-size: 1.5rem;
+            width: 20rem; } }
     .gallery__box--6 {
       position: relative; }
       .gallery__box--6-text {
@@ -232,6 +284,10 @@ body {
         padding: 1rem 1rem;
         font-size: 2rem;
         color: white; }
+        @media only screen and (max-width: 1000px) {
+          .gallery__box--6-text {
+            font-size: 1.5rem;
+            width: 15rem; } }
   .gallery__img {
     display: block;
     width: 100%;
@@ -245,11 +301,17 @@ body {
     padding: 5rem;
     display: flex;
     justify-content: space-around; }
+  @media only screen and (max-width: 1000px) {
+    .testi {
+      flex-direction: row; } }
   .testi__box {
     box-sizing: border-box;
     width: 100%; }
     .testi__box:first-child {
       margin-right: 5rem; }
+      @media only screen and (max-width: 1000px) {
+        .testi__box:first-child {
+          margin-right: 0; } }
   .testi__message {
     font-size: 3rem;
     background: linear-gradient(to right, #775A16, #DA9C80);
@@ -257,6 +319,20 @@ body {
     -webkit-text-fill-color: transparent;
     font-weight: 300;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 1300px) {
+      .testi__message {
+        font-size: 2.5rem;
+        margin-bottom: 4rem; } }
+    @media only screen and (max-width: 1200px) {
+      .testi__message {
+        font-size: 2rem;
+        margin-bottom: 4rem; } }
+    @media only screen and (max-width: 1140px) {
+      .testi__message {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 1120px) {
+      .testi__message {
+        margin-bottom: 1.8rem; } }
   .testi__image img {
     width: 100%;
     -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
@@ -271,11 +347,29 @@ body {
     text-shadow: 0 5rem 10rem rgba(0, 0, 0, 0.4);
     font-weight: 500;
     font-style: italic; }
+    @media only screen and (max-width: 1300px) {
+      .testi__heading {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 1200px) {
+      .testi__heading {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 1120px) {
+      .testi__heading {
+        font-size: 1.8rem; } }
   .testi__names {
     font-size: 1.5rem;
     margin-top: 1rem;
     line-height: 1.2rem;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 1300px) {
+      .testi__names {
+        margin-bottom: 4rem; } }
+    @media only screen and (max-width: 1200px) {
+      .testi__names {
+        margin-bottom: 3rem; } }
+    @media only screen and (max-width: 1120px) {
+      .testi__names {
+        margin-bottom: 2.5rem; } }
 
 .appoint__container {
   padding: 5rem;
@@ -288,9 +382,15 @@ body {
 .appoint__call {
   font-size: 2.8rem;
   text-transform: uppercase; }
+  @media only screen and (max-width: 1000px) {
+    .appoint__call {
+      font-size: 2rem; } }
 .appoint__discount {
   font-size: 2rem;
   color: #efefef; }
+  @media only screen and (max-width: 1000px) {
+    .appoint__discount {
+      font-size: 1.8rem; } }
 .appoint__button {
   display: block;
   border: none;
@@ -304,6 +404,9 @@ body {
   font-size: 1.5rem;
   transition: all .2s;
   cursor: pointer; }
+  @media only screen and (max-width: 1120px) {
+    .appoint__button {
+      padding: 1rem 4rem; } }
   .appoint__button:hover {
     box-shadow: 0 5rem 10rem rgba(0, 0, 0, 0.5);
     transform: scale(1.1); }

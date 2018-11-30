@@ -5,6 +5,11 @@
     background-position: center;
     height: 90vh;
     position: relative;
+    @media only screen and (max-width:1140px){
+       height: 80vh;
+       font-size: 90%;
+    }
+   
     &__nav{
        padding: 1.5rem;
        display: flex;
@@ -33,6 +38,9 @@
         font-size: 2rem;
         font-weight: 500;
         margin-right: 5rem;
+        @media only screen and (max-width:1200px){
+            margin-right: 2rem;
+        }
 
         &-items{
             list-style: none;
@@ -65,12 +73,18 @@
         font-weight: 300;
         text-transform: uppercase;
         text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        @media only screen and (max-width:1120px){
+            font-size: 5rem;
+        }
     }
     &__subtext{
         font-size: 3.2rem;
         font-weight: 300;
         color:$color-salmon;
         text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        @media only screen and (max-width:1120px){
+            font-size: 3rem;
+        }
     }
 
     &__button{
@@ -104,6 +118,9 @@
     &__block{
         display: inline-block;
         margin:0 5rem;
+        @media only screen and (max-width:1200px){
+            margin: 0 2rem;
+        }
         line-height: 150%;
         width: 20rem;
     }

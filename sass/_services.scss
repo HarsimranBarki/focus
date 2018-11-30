@@ -11,6 +11,12 @@
         @media only screen and (max-width:1120px){
             padding: 1.5rem;
         }
+        @media only screen and (max-width:768px){
+            padding: .5rem;
+         }
+         @media only screen and (max-width:426px){
+            padding: 0;
+            }
     }
 
     &__heading{
@@ -21,7 +27,9 @@
         background: linear-gradient(to right,$color-brown, $color-wood);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        
+        @media only screen and (max-width:768px){
+            font-size: 2.5rem;
+         }
     }
    
 
@@ -29,6 +37,11 @@
        display: flex;
        justify-content: space-around;
        margin-bottom: 2rem;
+       @media only screen and (max-width:426px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
 
         &--heading{
             font-size: 2.2rem;
@@ -38,12 +51,18 @@
             background: linear-gradient(to right bottom,$color-brown, $color-wood);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            @media only screen and (max-width:768px){
+                font-size: 1.8rem;
+             }
         }
         &--text{
             font-size: 1.8rem;
             font-weight: 400;
             line-height: 120%;
             color: $color-grey;
+            @media only screen and (max-width:768px){
+                font-size: 1.2rem;
+             }
         }
     }
     &__img{
@@ -53,5 +72,8 @@
         // background-color: red;
         width: 30rem;
         text-align: center;
+        @media only screen and (max-width:768px){
+            width: 25rem;
+         }
     }
 }

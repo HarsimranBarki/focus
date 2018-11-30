@@ -6,9 +6,19 @@
     height: 90vh;
     position: relative;
     @media only screen and (max-width:1140px){
-       height: 80vh;
+       height: 90vh;
        font-size: 90%;
     }
+    @media only screen and (max-width:1000px){
+        height: 90vh;
+        }
+        @media only screen and (max-width:768px){
+            overflow: hidden;
+            height: 50rem;
+            }
+            @media only screen and (max-width:426px){
+                height: 30rem;
+                }
    
     &__nav{
        padding: 1.5rem;
@@ -16,6 +26,9 @@
        justify-content:space-between;
        align-content: center;
        justify-items: center;
+        @media only screen and (max-width:768px){
+              background-color: #222;
+           }
     }
     &__logo{
         display: flex;
@@ -25,6 +38,13 @@
             color: #fff;
             align-self: center;
             margin-left: 1rem;
+            @media only screen and (max-width:1000px){
+                font-size: 1.5rem;
+                }
+                @media only screen and (max-width:1120px){
+              
+                    display: none;
+                }
         }
     }
     &__img{
@@ -32,6 +52,11 @@
         height: 3rem;
         width: 3rem;
         margin-left: 5rem;
+        @media only screen and (max-width:1000px){
+            height: 2rem;
+            width: 2rem;
+            }
+           
     }
     &__list{
         display: flex;
@@ -39,8 +64,18 @@
         font-weight: 500;
         margin-right: 5rem;
         @media only screen and (max-width:1200px){
+            font-size: 1.9rem;
             margin-right: 2rem;
         }
+        @media only screen and (max-width:1000px){
+            font-size: 1.5rem;
+            margin-right: 1.8rem;
+            }
+            @media only screen and (max-width:768px){
+              &:not(:last-child){
+                margin-right: 1rem;
+              }
+           }
 
         &-items{
             list-style: none;
@@ -76,6 +111,13 @@
         @media only screen and (max-width:1120px){
             font-size: 5rem;
         }
+        @media only screen and (max-width:1000px){
+            font-size: 3.5rem;
+            }
+            @media only screen and (max-width:426px){
+                font-size: 3rem;
+                }
+            
     }
     &__subtext{
         font-size: 3.2rem;
@@ -85,6 +127,12 @@
         @media only screen and (max-width:1120px){
             font-size: 3rem;
         }
+        @media only screen and (max-width:1000px){
+            font-size: 2rem;
+            }
+            @media only screen and (max-width:426px){
+                font-size: 1.5rem;
+                }
     }
 
     &__button{
@@ -107,31 +155,67 @@
             transform: translateY(.3rem);
             box-shadow: 0 1px 5px rgba(0,0,0,0.2);
         }
+
+        @media only screen and (max-width:1000px){
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            margin-top: 3rem;
+            }
+            @media only screen and (max-width:426px){
+                font-size: 1rem;
+                margin-top: 2rem;
+                }
     }
 
     &__review{
         display: flex;
         transform: translateY(10rem);
         color:#efefef;
+        @media only screen and (max-width:426px){
+            display: none;
+            }
+       
         
     }
     &__block{
         display: inline-block;
         margin:0 5rem;
+        line-height: 150%;
+        width: 20rem;
         @media only screen and (max-width:1200px){
             margin: 0 2rem;
         }
-        line-height: 150%;
-        width: 20rem;
+        @media only screen and (max-width:1000px){
+            margin: 0 1.5rem;
+            }
+            @media only screen and (max-width:768px){
+                margin: 0 .2rem;
+                width: 15rem;
+                }
+       
     }
 
     &__name{
         font-size: 2rem;
         font-weight: 600;
+        @media only screen and (max-width:1000px){
+            font-size: 1.5rem;
+            }
+            @media only screen and (max-width:768px){
+                font-size: 1.2rem;
+                }
+
     }
     &__data{
         margin-top: 1rem;
         font-size:1.5rem;
+        @media only screen and (max-width:1000px){
+            font-size: 1.2rem;
+            line-height: 1.2;
+            }
+            @media only screen and (max-width:768px){
+                font-size: 1rem;
+                }
     }
 
 }

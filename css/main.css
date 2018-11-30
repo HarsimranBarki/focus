@@ -16,7 +16,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   height: 90vh;
   position: relative; }
   .header__nav {
@@ -280,7 +279,8 @@ body {
     font-style: italic; }
   .testi__names {
     font-size: 1.5rem;
+    margin-top: 1rem;
     line-height: 1.2rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 3rem; }
 
 /*# sourceMappingURL=main.css.map */

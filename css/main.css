@@ -311,4 +311,37 @@ body {
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
     transform: scale(1); }
 
+.footer__container {
+  background-color: #222;
+  padding: 3rem; }
+.footer__img {
+  height: 5rem;
+  width: 5rem;
+  display: block;
+  margin: 0 auto; }
+.footer__list {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center; }
+.footer__items {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #DA9C80;
+  transition: all .2s;
+  font-weight: 300; }
+  .footer__items:hover {
+    color: #FCC47D;
+    transform: scale(1.1); }
+  .footer__items:not(:last-child) {
+    margin-right: 3rem; }
+  .footer__items li {
+    list-style: none;
+    font-family: inherit; }
+.footer__copyright {
+  color: #797571;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 4rem;
+  font-weight: 300; }
+
 /*# sourceMappingURL=main.css.map */

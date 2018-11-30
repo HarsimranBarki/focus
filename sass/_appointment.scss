@@ -1,0 +1,43 @@
+.appoint{
+    &__container{
+        padding: 5rem;
+        background-color:#312200;
+        color: #fff;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    &__call{
+       font-size: 2.8rem;
+       text-transform: uppercase;
+    }
+    &__discount{
+        font-size: 2rem;
+        color: #efefef;
+    }
+    &__button{
+        display: block;
+        border: none;
+        background-color: $color-salmon;
+        color: $color-dark-grey;
+        text-transform: uppercase;
+        padding: 2rem 5rem;
+        font-family: inherit;
+        font-weight: 600;
+        border-radius: .2rem;
+        font-size: 1.5rem;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover{
+            box-shadow: 0 5rem 10rem rgba(0,0,0,0.5);
+            transform: scale(1.1);
+
+        }
+        &:active{
+            box-shadow: 0 2rem 2rem rgba(0,0,0,0.5);
+            transform: scale(1);
+        }
+    }
+}
